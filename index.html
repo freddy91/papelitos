@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+
+	<title>Papelitos</title>
+</head>
+<body>
+	<div>
+		<h2 style="text-align: center;">PAPELITOS</h2>
+	</div>
+
+	<div>
+		<form id="equipos-form" autocomplete="off">
+			<input type="text" name="equipos"  id="equipos">
+			<button id="btn-equipos">Equipos</button>
+		</form>
+	</div>
+
+	<div style="margin-top: 20px;">
+		<form id="word-form" autocomplete="off">
+			<input type="text" name="word" id="word" required="">
+			<button id="btn-word">Enviar palabra</button>
+		</form>
+	</div>
+
+	<p id="total"></p>
+
+	<form id="empezar-form" style="margin-top: 20px; margin-bottom: 20px;" autocomplete="off">
+		<input type="text" name="pass" id="pass" required="">
+		<button>Empezar juego</button>
+	</form>
+
+	<a href="juego.html">Empezar</a>
+
+	<button style="margin-top: 10px;" onClick="window.location.reload();">Recargar página</button>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyBw2lcd4CLaMvdmdFYVYJUvo1yKzBgBvKs",
+	    authDomain: "espia-26d5c.firebaseapp.com",
+	    projectId: "espia-26d5c",
+	    storageBucket: "espia-26d5c.appspot.com",
+	    messagingSenderId: "254478440869",
+	    appId: "1:254478440869:web:dd8b1bb8c61871b588f04c",
+	    measurementId: "G-359M0P4889"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+	<script defer src="main.js"></script>
+</body>
+</html>
